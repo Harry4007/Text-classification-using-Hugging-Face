@@ -1,8 +1,8 @@
 # Text-classification-using-Hugging-Face
-In this model We have build a Text classification using NLP using Hugging Face model
+In this model We have build a Text classification using NLP using Hugging Face model.
 
 
-# Brief Overview of model and Dataset
+## Brief Overview of model and Dataset
 The task is to build an NLP model using Hugging Face and Transformers on a tweet
 dataset with two columns - text and label. The text column contains comments from
 users, while the label column contains the corresponding emotion of the comment. The

@@ -25,39 +25,51 @@ two columns - text and label, we can follow these steps:
 
 ### Preprocessing:
 ● Clean the text by removing unwanted characters, HTML tags, and URLs.
+
 ● Tokenize the text by splitting it into words and converting them into numerical
 tokens.
+
 ● Pad and truncate the input sequences to ensure they have the same length.
+
 ● Convert the categorical emotion labels into numerical values.
+
 ### Model Architecture:
 ● Use the DistilBERT model from Hugging Face, a smaller and faster variant of the
 popular BERT model.
+
 ● Fine-tune the DistilBERT model on the tweet dataset using transfer learning.
+
 ● The model architecture consists of an input layer, multiple transformer blocks,
 and a dense output layer with softmax activation for multi-class classification.
 
 ### Fine-tuning the model:
 ● Use the Adam optimizer and categorical cross-entropy loss function to fine-tune
 the model.
+
 ● Train the model for several epochs, gradually decreasing the learning rate over
 time to improve convergence.
+
 ● Evaluate the model on a separate validation set during training to monitor the
 performance and prevent overfitting.
 
 ### Evaluation:
 ● Use accuracy, precision, recall, and F1 score as evaluation metrics.
+
 ● The model achieved an overall accuracy of 0.85 on the testing dataset, indicating
 good performance.
+
 ● Calculate precision, recall, and F1 score for each emotion class to analyze the
 model's performance in individual classes.
 
 ### Possible Improvements:
 ● Increase the size of the training dataset or fine-tune the model on a larger
 dataset.
+
 ● Experiment with different hyperparameters or use different pre-trained models to
 potentially improve performance.
 
 ### Sample Predictions:
 ● Pass a new text to the model to generate a predicted emotion label.
+
 ● Interpret the model's decisions and understand its reasoning using attention
 scores.

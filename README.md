@@ -64,5 +64,7 @@ model's performance in individual classes.
 ### Possible Improvements:
 
 ● Increase the training dataset size or fine-tune the model on a larger dataset.
+
 ● Experiment with different hyperparameters or use various pre-trained models to enhance performance.
+
 ● Implement self-supervised learning techniques to improve model training efficiency and reduce dependency on labeled data.
